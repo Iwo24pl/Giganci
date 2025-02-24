@@ -6,6 +6,12 @@
     <title>Ranking Telefonów</title>
     <link class= "icon" rel="icon" href="https://icons.iconarchive.com/icons/double-j-design/diagram-free/32/iphone-icon.png">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        body {
+            background: #544a7d; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #5152a2, #ebf4f6); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #5152a2, #ebf4f6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
         img:hover {
             cursor: help;
         }
@@ -17,10 +23,29 @@
         }
         a {
             text-decoration: none;
+            color: cyan;
         }
         iframe {
             width: 170px;
             height: 100px;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-spacing: 0;
+        }
+        th, td {
+            width: 280px;
+            text-align: center;
+        }
+        td {
+            font-size: 15px;
+            font-family: "Roboto Mono", serif;
+        }
+        th {
+            padding: 10px;
+            font-size: 20px;
+            border-bottom: 4px solid;
         }
     </style>
 </head>
@@ -36,13 +61,13 @@
             <th>Ocena</th>
         </tr>
         <tr>
-            <th>Apple</th>
-            <th>iPhone 16 Pro Max</th>
-            <th><iframe src="https://www.youtube.com/embed/G1MpUlIEqA0?si=Xw_-qY_5o6b-W2rU" title="iPhone 12 Pro Max Review: The Biggest Ever!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></th>
-            <th><a href="https://cdsassets.apple.com/live/6GJYWVAV/information/locale/pl-pl/iphone-16-pro-max-info.pdf" target="_blank"><img src="https://static.iphoned.nl/orca/products/23030/apple-iphone-16-pro-max.png"></a></th>
-            <th>Od 6299 zł</th>
-            <th>8/10 - PCMag </th>
-            <th><a href="https://www.apple.com/pl/iphone-16-pro/" target="_blank">Dowiedz się więcej!</a></th>
+            <td>Apple</td>
+            <td>iPhone 16 Pro Max</td>
+            <td><iframe src="https://www.youtube.com/embed/G1MpUlIEqA0?si=Xw_-qY_5o6b-W2rU" title="iPhone 12 Pro Max Review: The Biggest Ever!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+            <td><a href="https://cdsassets.apple.com/live/6GJYWVAV/information/locale/pl-pl/iphone-16-pro-max-info.pdf" target="_blank"><img src="https://static.iphoned.nl/orca/products/23030/apple-iphone-16-pro-max.png"></a></td>
+            <td>Od 6299 zł</td>
+            <td>8/10 - PCMag </td>
+            <td><a href="https://www.apple.com/pl/iphone-16-pro/" target="_blank">Dowiedz się więcej!</a></td>
         </tr>
     </table>
 </body>
