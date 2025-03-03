@@ -20,7 +20,7 @@
         function changeClass() {
             var button = document.getElementById("send");
             button.classList.add("app-btn-success");
-            button.textContent = "Thank you!";
+            button.textContent = "Thank you! We will answer soon.";
 
             setTimeout(function () {
                 button.classList.remove("app-btn-success");
@@ -35,9 +35,8 @@
 <body>
     <form style="text-align: center;" method="POST" action="https://formsubmit.co/iwo.slota@icloud.com"
         enctype="multipart/form-data">
-        <label>
-            <h2><b>Please register.</b></h2>
-        </label> <br>
+        <fieldset>
+            <legend><h2><b>example.com Registration!</b></h2></legend>
         <input class="app-input-text" type="text" maxlength="10" placeholder="Enter a username*" required><br><br>
         <input class="app-input-text" type="password" placeholder="Enter a password*" required><br><br>
         <input class="app-input-text" type="email" placeholder="Email*" required><br><br>
@@ -59,7 +58,10 @@
         </select><br><br>
         <label>Remember to send a picture of your favourite chocolate!</label><br>
         <input type="file" accept="image/png, image/jpg"> <br><br>
+        <input type="hidden" name="_subject" value="Neu message">
+        <input type="hidden" name="_autoresponse" value="DANKE!">
         <button type="submit" id="send" onclick="changeClass()" class="app-btn">Send</button>
+    </fieldset>
     </form>
 </body>
 
