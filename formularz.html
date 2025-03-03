@@ -37,14 +37,14 @@
         enctype="multipart/form-data">
         <fieldset>
             <legend><h2><b>example.com Registration!</b></h2></legend>
-        <input class="app-input-text" type="text" maxlength="10" placeholder="Enter a username*" required><br><br>
-        <input class="app-input-text" type="password" placeholder="Enter a password*" required><br><br>
-        <input class="app-input-text" type="email" placeholder="Email*" required><br><br>
+        <input class="app-input-text" type="text" maxlength="10" placeholder="Enter a username*" name="username" required><br><br>
+        <input class="app-input-text" type="password" placeholder="Enter a password*" name="password" required><br><br>
+        <input class="app-input-text" type="email" placeholder="Email*" name="email" required><br><br>
         <label>Birth Date</label><br>
-        <input class="app-input-text" type="date" placeholder=""> <br><br>
+        <input class="app-input-text" type="date" placeholder="" name="birthdate"> <br><br>
         <label>Phone number (+48)</label><br>
-        <input class="app-input-text" type="tel" placeholder="xxxxxxxxx" pattern="[0-9]{9}"> <br><br>
-        <textarea class="app-textarea" placeholder="Notes..."></textarea><br><br>
+        <input class="app-input-text" type="tel" placeholder="xxxxxxxxx" pattern="[0-9]{9}" name="phone-num"> <br><br>
+        <textarea class="app-textarea" placeholder="Notes..." name="notes"></textarea><br><br>
         <label>What's your gender?</label> <br>
         <input type="radio" class="app-radio-button" id="RadioButtonDefault" name="gender" checked value="Man">
         <label for="RadioButtonDefault">Male</label>
@@ -52,12 +52,13 @@
         <input type="radio" class="app-radio-button" id="RadioButtonDefault2" name="gender" value="Girl">
         <label for="RadioButtonDefault2">Female</label><br><br>
         <label>Where are you from?</label><br>
-        <select>
+        <select name="country">
             <option value="Upper Poland">Upper Poland</option>
             <option value="Lower Poland">Lower Poland</option>
         </select><br><br>
+        <p>Do you accept sending your data in plain text?<input class="app-checkbox" style="width:20px;" type="checkbox" checked="checked" required></p>
         <label>Remember to send a picture of your favourite chocolate!</label><br>
-        <input type="file" accept="image/png, image/jpg"> <br><br>
+        <input name="photo" type="file" accept="image/png, image/jpeg"> <br><br>
         <input type="hidden" name="_subject" value="Neu message">
         <input type="hidden" name="_autoresponse" value="DANKE!">
         <button type="submit" id="send" onclick="changeClass()" class="app-btn">Send</button>
